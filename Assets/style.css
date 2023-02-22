@@ -1,0 +1,39 @@
+body{
+    background-image: url("https://th.bing.com/th/id/R.6f644f172ff2f71879dd457d7d22fda9?rik=3J9osREfl1cS8g&riu=http%3a%2f%2f1.bp.blogspot.com%2f-fCzAguZzCYI%2fUlljy2y3WrI%2fAAAAAAAAAOM%2fCMFp8tKlxtk%2fs1600%2fphotographie-Cathedral-Cove.png&ehk=yEjt3Zv289pD53Ymt%2f6rzCjw4pxOOrbb992Xvhkp%2fow%3d&risl=&pid=ImgRaw&r=0");
+    background-size: cover;
+      
+      
+}
+
+.white{
+    color:black;
+}
+
+.form-wrapper {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-section{
+    width: 400px;
+    height: auto;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+}
+
+form {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+#quote-title{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
