@@ -2,50 +2,63 @@
 <html>
     <head>
         <title>
-            Be Inspired
+            Quote Generator
         </title>
         <link rel="stylesheet" href="Assets/style.css">
         <script src="script.js" defer></script>
     </head>
 
     <body>
-     <div class="form-wrapper">
+     <div class="form-wrapper" id="form-wrapper">
         <div class="form-section">
             <fieldset>
                 <legend id="quote-title">Quote Generator</legend>
             <form>
             <label id="name-label" for="name">Name:</label>
             <br>
-            <input type="text" id="name" name="name">
+            <input type="text" id="name" name="name" autofocus>
             
             <br>
             <br>
             <label id="luckynum-label" for="lucky-num" >Lucky Number:</label>
             <br>
-            <input type="number" id="lucky-num" name="lucky-num">
+            <input type="number" id="lucky-num" name="lucky-num" min="0" max="100" >
 
             <br>
             <br>
             <label id="category-label" for="category">Category:</label>
             <br>
-            <input type="radio" id="hilarious" name="category">
-            <label for="hilarious">Hilarious</label>
+            <input type="radio" id="travel" name="category" checked value="hilarious">
+            <label for="travel">Travel</label>
 
-            <input type="radio" id="healing" name="category">
-            <label for="healing">Healing</label>
+            <input type="radio" id="celestial" name="category" value="healing">
+            <label for="celestial">Celestial</label>
 
-            <input type="radio" id="intellectual" name="category">
-            <label for="intellectual">Intellectual</label>
+            <input type="radio" id="philosophical" name="category" value="intellectual">
+            <label for="philosophical">Philosophical</label>
             
             <br>
             <br>
-            <button>Generate</button>
+            <button type="button" id="generate" onclick=displayQuote()> Generate</button>
+
+            </div>
+
+            
             
             </form>
         </fieldset>
             </div>
         </div>
     </div>
+    <div class="card" id="display-quote" style="display:none; text-align: center;" >
+        <div class="quote">
+            <p>"I can resist everything except temptation." - Oscar Wilde</p>
+        </div>
+        <div class="reset">
+            <br>
+            <button type="button" id="btnReset" >Reset</button>
+        </div>
+    </div>    
     </body>
 
 </html>
