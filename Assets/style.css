@@ -5,9 +5,6 @@ body{
       
 }
 
-.white{
-    color:black;
-}
 
 .form-wrapper {
     display:flex;
@@ -27,6 +24,7 @@ body{
     border-radius: 10px;
     border: 1px solid #e0e0e0;
     padding: 20px;
+    
 }
 
 form {
@@ -40,7 +38,7 @@ form {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.card {
+.quote-wrapper {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -57,7 +55,7 @@ form {
     height: auto;
   }
   
-  .quote {
+  .quote-section {
     flex: 0 0 auto;
     margin-right: 20px;
     background-color: #fff;
