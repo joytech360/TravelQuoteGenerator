@@ -2,57 +2,60 @@
 <html>
     <head>
         <title>
-            Quote Generator
+            Travel Quote Generator
         </title>
         <link rel="stylesheet" href="Assets/style.css">
         <script src="script.js" defer></script>
     </head>
 
     <body>
-     <div class="form-wrapper" id="form-wrapper">
-        <div class="form-section">
-            <fieldset>
-                <legend id="quote-title">Quote Generator</legend>
-            <form>
-            <label id="name-label" for="name">Name:</label>
-            <br>
-            <input type="text" id="name" name="name" autofocus>
-            
-            <br>
-            <br>
-            <label id="luckynum-label" for="lucky-num" >Lucky Number:</label>
-            <br>
-            <input type="number" id="lucky-num" name="lucky-num" min="0" max="100" >
+        <!--Form Wrapper-->   
+        <div class="form-wrapper" id="form-wrapper">
+            <div class="form-section">
+                <fieldset>
+                    <legend id="quote-title">Quote Generator</legend>
+                <form>
+                <!--name field-->    
+                <label id="name-label" for="name">Name:</label>
+                <br>
+                <input type="text" id="name" name="name" autofocus>
+                
+                <br>
+                <br>
 
-            <br>
-            <br>
-            <label id="vacation-label" for="vacation">Dream Vacation:</label>
-            <br>
-            <input type="text" list="vacationList">
-            <datalist id="vacationList">
-                <option>Bora Bora</option>
-                <option>Bora Bora</option>
-                <option>Bora Bora</option>
-                <option>Bora Bora</option>
-                <option>Bora Bora</option>
-                <option>Bora Bora</option>
+                <!--lucky num field-->    
+                <label id="luckynum-label" for="lucky-num" >Lucky Number:</label>
+                <br>
+                <input type="number" id="lucky-num" name="lucky-num" min="1" max="100" >
 
-            </datalist>
-            
-            <br>
-            <br>
-            <button type="button" id="generate" onclick=displayQuote()> Generate</button>
+                <br>
+                <br>
 
-            </div>
+                <!--dream vacation field-->
+                <label id="vacation-label" for="vacation">Dream Vacation:</label>
+                <br>
+                <input type="text" list="vacationList" name="vacation">
+                <datalist id="vacationList">
+                    <option value="Bora Bora"></option>
+                    <option value="Bali"></option>
+                    <option value="Santorini"></option>
+                    <option value="Maldives"></option>
+                    <option value="Hawaii"></option>
+                </datalist>
+                
+                <br>
+                <br>
 
-            
-            
-            </form>
-        </fieldset>
-            </div>
+                <!--generate button-->
+                <button type="button" id="generate" onclick=displayQuote()> Generate</button>
+
+                </form>
+            </fieldset>
         </div>
-    </div>
-    <div class="quote-wrapper" id="display-quote" style="display:none; text-align: center;" >
+        </div><!--End of wrapper div--> 
+
+    <!--Quote Wrapper-->    
+    <div class="quote-wrapper" id="display-quote" style="display:none; text-align:center;" >
         <div class="quote-section">
             <p id="quote">"I can resist everything except temptation." - Oscar Wilde</p>
         </div>
@@ -60,7 +63,6 @@
             <br>
             <button type="button" id="btnback" onclick=goBack()>Back</button>
         </div>
-    </div>    
+    </div><!--End of quote wrapper div-->    
     </body>
-
 </html>

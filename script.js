@@ -1,4 +1,4 @@
-
+//Stores array of travel quotes
 const travelQuotes = [
   '"The world is a book and those who do not travel read only one page."\n- Saint Augustine',
   '"The use of traveling is to regulate imagination with reality, and instead of thinking of how things may be, see them as they are."\n- Samuel Johnson',
@@ -44,9 +44,11 @@ const travelQuotes = [
         
 ]
 
+//Stores name and num input field values
 var nameInput = document.getElementById('name');
 var numInput = document.getElementById('lucky-num');
 
+//Returns true if the name and num input fields are valid
 function validateInputs(){
     if(nameInput.value == ""){
         alert('Please enter your name');
@@ -59,13 +61,17 @@ function validateInputs(){
     return true;
 }
 
+//Generates a random quote based on a number parameter
 function generateRandomQuote(num){
   return travelQuotes[num];
 
 }
 
+//Stores form and display div dom elements
 var formWrapperElement = document.getElementById('form-wrapper');
 var displayQuoteElement = document.getElementById('display-quote')
+
+//Hides the quote generator display and reveals the randomly generated quote
 function displayQuote(){
 
     if(validateInputs()){
@@ -80,9 +86,11 @@ function displayQuote(){
       
       }
 
+//Redisplays the quote generator display      
 function goBack(){
-  formWrapperElement.style.display = "block";
+  formWrapperElement.style.display = "flex";
   displayQuoteElement.style.display = "none";
+
 }    
       
     
